@@ -5,10 +5,22 @@
         <title>Doodle Classifier</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.dom.min.js"></script>
+        <style>
+            body {
+                background-color: #AAA;
+            }
+            button {
+                font-size: 24pt;
+                margin: 10px;
+            }
+        </style>
     </head>
     <body>
-        
-        <script src="lib/matrix.js"></script>
+        <button id="train" onclick="trainEpochs();">Train</button>
+        <button id="test" onclick="testClassifier();">Test</button>
+        <button id="guess" onclick="predictDraw();">Guess</button>
+    
+        <script src="lib/matrix.js"></script>   
         <script src="lib/nn.js"></script>
         <script src="http://127.0.0.1:5000/res/sketch.js"></script>
     </body>
