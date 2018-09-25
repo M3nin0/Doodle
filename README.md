@@ -1,4 +1,4 @@
-# Doodle
+# Doodle :dragon:
 
 Classificador de imagens do Google Quick Draw.
 
